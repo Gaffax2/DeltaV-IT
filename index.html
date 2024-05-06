@@ -7,48 +7,131 @@
     <style>
       body {
         font-family: Arial, sans-serif;
-        margin: 40px;
-        background-color: #f4f4f9;
+        margin: 0;
+        padding: 0;
         color: #333;
+        background: #f4f4f4;
       }
-      header {
+      .header,
+      .footer {
         background: #005f73;
-        color: #fff;
-        padding: 10px 20px;
-        text-align: center;
+        color: white;
+        padding: 20px 20px;
       }
-      section {
-        margin-top: 20px;
+      .content {
         padding: 20px;
         text-align: center;
       }
-      button {
-        background-color: #005f73;
-        border: none;
+      .section {
+        margin-bottom: 20px;
+      }
+      h1 {
+        text-align: left;
+      }
+      h2 {
+        color: #005f73;
+      }
+      p,
+      ul {
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+      }
+      ul {
+        list-style-position: inside;
+      }
+      .button {
+        background-color: #007bff;
         color: white;
+        border: none;
         padding: 10px 20px;
-        text-align: center;
         text-decoration: none;
         display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
+        margin-top: 10px;
         cursor: pointer;
+      }
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+      .wrapper {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      #logo {
+        text-align: left;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Velkommen til DeltaV IT</h1>
-    </header>
-    <section>
-      <p>
-        DeltaV IT er din partner i digitale løsninger. Vi specialiserer os i at
-        udvikle skræddersyede softwareløsninger, der hjælper din virksomhed med
-        at accelerere og optimere processer.
-      </p>
-      <button onclick="location.href='mailto:info@deltavit.dk';">
-        Kontakt Os
-      </button>
-    </section>
+    <div class="header">
+      <img id="logo" src="deltav-logo.svg" alt="DeltaV IT logo" />
+    </div>
+
+    <div class="content">
+      <div class="wrapper">
+        <div class="section">
+          <h2>Om DeltaV IT</h2>
+          <p>
+            DeltaV IT er dedikeret til at forbedre softwarekvaliteten gennem
+            avanceret QA automatisering. Med års erfaring inden for både manuel
+            og automatiseret testning sikrer vi, at vores kunders
+            softwareprodukter er robuste, effektive og fejlfri.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Tjenester</h2>
+          <ul>
+            <li>
+              Manuel Testning - Omfattende manuel testning for at sikre
+              softwarens brugervenlighed og funktionalitet.
+            </li>
+            <li>
+              Automatiseret Testning - Implementering af automatiserede
+              testprocesser ved brug af førende værktøjer og rammer.
+            </li>
+            <li>
+              Test Management - Effektiv styring af testprocesser fra
+              planlægning til eksekvering.
+            </li>
+            <li>
+              Strategianalyse - Udvikling og optimering af teststrategier for at
+              maksimere effektiviteten og ROI.
+            </li>
+          </ul>
+        </div>
+
+        <div class="section">
+          <h2>Portfolio</h2>
+          <p>
+            Kort beskrivelse af nøgleprojekter og casestudier, der viser
+            succesfulde implementeringer af komplekse teststrategier for
+            velrenommerede klienter.
+          </p>
+        </div>
+
+        <div class="section">
+          <h2>Testimonials</h2>
+          <p>
+            "DeltaV IT har været en uvurderlig partner i vores stræben efter at
+            sikre den højeste softwarekvalitet." - Klientnavn
+          </p>
+        </div>
+
+        <div class="section">
+          <a class="button" href="mailto:info@deltavit.dk">Kontakt Os</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="wrapper">
+        <p>© DeltaV IT 2024. Alle rettigheder forbeholdes.</p>
+      </div>
+    </div>
   </body>
 </html>
